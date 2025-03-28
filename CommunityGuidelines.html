@@ -16,6 +16,16 @@
       background-color: rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(12px);
     }
+    .highlight-section {
+      border-left: 4px solid #60a5fa;
+    }
+    .report-button {
+      transition: all 0.3s ease;
+    }
+    .report-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
   </style>
 </head>
 <body class="min-h-screen gradient-bg text-white">
@@ -58,14 +68,100 @@
       <p class="text-xl text-blue-200 mx-auto max-w-3xl">
         Building a safe and inclusive space for students to connect, collaborate, and succeed together.
       </p>
+      
+      <!-- Quick Report Button -->
+      <div class="mt-8">
+        <a href="#report-section" class="inline-flex items-center px-6 py-3 bg-red-600 text-white font-medium rounded-lg shadow-lg report-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+          </svg>
+          Report a Concern
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- Main Content -->
   <section class="py-12">
     <div class="container mx-auto px-6">
+      <!-- Table of Contents -->
+      <div class="mb-16 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
+        <h2 class="text-2xl font-bold text-white mb-6">Contents</h2>
+        <ol class="space-y-3 text-blue-100 list-decimal list-inside">
+          <li><a href="#child-safety" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Child Safety & Protection</a></li>
+          <li><a href="#respect" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Respect and Inclusivity</a></li>
+          <li><a href="#authentic" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Authentic Interactions</a></li>
+          <li><a href="#content" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Appropriate Content</a></li>
+          <li><a href="#intellectual" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Intellectual Property</a></li>
+          <li><a href="#privacy" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Privacy and Security</a></li>
+          <li><a href="#report" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Reporting Concerns</a></li>
+          <li><a href="#commitment" class="hover:text-white transition-colors duration-200 border-b border-blue-300 border-opacity-50">Our Commitment</a></li>
+        </ol>
+      </div>
+
+      <!-- Child Safety - NEW SECTION -->
+      <div id="child-safety" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl border-2 border-red-400 border-opacity-30">
+        <div class="inline-flex items-center px-4 py-2 bg-red-700 bg-opacity-40 text-red-100 rounded-lg mb-4">
+          Priority: Child Safety & Protection
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-6">Child Safety & Protection Standards</h2>
+        
+        <div class="bg-red-900 bg-opacity-20 p-6 rounded-xl mb-8">
+          <p class="text-white font-medium mb-4">Milaan has a zero-tolerance policy for any content, behavior, or activity that exploits, harms, or endangers minors. We define a minor as any person under the age of 18.</p>
+        </div>
+        
+        <ul class="space-y-4">
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-red-500 bg-opacity-20 text-red-300">•</div>
+            <p class="text-blue-100"><strong class="text-white">Immediate action:</strong> We take immediate action against any content or behavior that sexualizes, exploits, endangers, or abuses minors</p>
+          </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-red-500 bg-opacity-20 text-red-300">•</div>
+            <p class="text-blue-100"><strong class="text-white">Grooming prevention:</strong> Communications that attempt to manipulate, exploit, or build inappropriate relationships with younger users are prohibited and reported to authorities</p>
+          </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-red-500 bg-opacity-20 text-red-300">•</div>
+            <p class="text-blue-100"><strong class="text-white">Legal compliance:</strong> We comply with all applicable laws regarding child safety and report illegal content to the National Center for Missing & Exploited Children (NCMEC) and relevant authorities</p>
+          </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-red-500 bg-opacity-20 text-red-300">•</div>
+            <p class="text-blue-100"><strong class="text-white">Age appropriate:</strong> All content must be appropriate for users 13 and above; users under 18 have additional protection measures</p>
+          </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-red-500 bg-opacity-20 text-red-300">•</div>
+            <p class="text-blue-100"><strong class="text-white">Prohibited content:</strong> Absolutely no content that depicts, promotes, normalizes or glorifies child abuse or exploitation in any form</p>
+          </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-red-500 bg-opacity-20 text-red-300">•</div>
+            <p class="text-blue-100"><strong class="text-white">Urgent reporting:</strong> We provide multiple, easy-to-access reporting tools for users to flag concerning content or behavior involving minors</p>
+          </li>
+        </ul>
+        
+        <div class="mt-6 p-4 bg-white bg-opacity-5 rounded-lg highlight-section">
+          <h4 class="font-bold text-white mb-2">How We Protect Young Users:</h4>
+          <ul class="space-y-2 text-blue-100">
+            <li>• Age verification during registration</li>
+            <li>• Proactive content moderation</li>
+            <li>• Age-appropriate content filtering</li>
+            <li>• Regular safety audits and improvements</li>
+            <li>• Educational resources for safe online interaction</li>
+            <li>• Partnerships with child safety organizations</li>
+          </ul>
+        </div>
+        
+        <div class="mt-8 flex items-center justify-between p-4 bg-blue-900 bg-opacity-30 rounded-lg">
+          <div class="flex-1">
+            <h4 class="font-bold text-white">Concerned about a child's safety?</h4>
+            <p class="text-blue-200">Report immediately through our urgent reporting system</p>
+          </div>
+          <a href="#report-section" class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors duration-200">
+            Report Now
+          </a>
+        </div>
+      </div>
+
       <!-- Respect and Inclusivity -->
-      <div class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
+      <div id="respect" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
         <div class="inline-flex items-center px-4 py-2 bg-blue-700 bg-opacity-40 text-blue-100 rounded-lg mb-4">
           Respect and Inclusivity
         </div>
@@ -87,11 +183,15 @@
             <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
             <p class="text-blue-100">Use inclusive language and remain mindful of diverse perspectives</p>
           </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
+            <p class="text-blue-100">Particular attention is given to protecting younger users from any form of harassment or bullying</p>
+          </li>
         </ul>
       </div>
 
       <!-- Authentic Interactions -->
-      <div class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
+      <div id="authentic" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
         <div class="inline-flex items-center px-4 py-2 bg-blue-700 bg-opacity-40 text-blue-100 rounded-lg mb-4">
           Authentic Interactions
         </div>
@@ -117,11 +217,15 @@
             <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
             <p class="text-blue-100">No impersonating other students, faculty, or institutions</p>
           </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
+            <p class="text-blue-100">Adults must never misrepresent their age or identity to interact with younger users</p>
+          </li>
         </ul>
       </div>
 
       <!-- Appropriate Content -->
-      <div class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
+      <div id="content" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
         <div class="inline-flex items-center px-4 py-2 bg-blue-700 bg-opacity-40 text-blue-100 rounded-lg mb-4">
           Appropriate Content
         </div>
@@ -151,11 +255,15 @@
             <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
             <p class="text-blue-100">Content must be suitable for users aged 13 and above</p>
           </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
+            <p class="text-blue-100">No sexualized content depicting or suggesting minors, even in cartoon, anime, or fictional form</p>
+          </li>
         </ul>
       </div>
 
       <!-- Intellectual Property -->
-      <div class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
+      <div id="intellectual" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
         <div class="inline-flex items-center px-4 py-2 bg-blue-700 bg-opacity-40 text-blue-100 rounded-lg mb-4">
           Intellectual Property
         </div>
@@ -185,7 +293,7 @@
       </div>
 
       <!-- Privacy and Security -->
-      <div class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
+      <div id="privacy" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl">
         <div class="inline-flex items-center px-4 py-2 bg-blue-700 bg-opacity-40 text-blue-100 rounded-lg mb-4">
           Privacy and Security
         </div>
@@ -215,15 +323,101 @@
             <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
             <p class="text-blue-100">Report security concerns immediately</p>
           </li>
+          <li class="flex items-start">
+            <div class="mt-1 mr-3 flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-blue-500 bg-opacity-20 text-blue-300">•</div>
+            <p class="text-blue-100">Users under 18 have enhanced privacy protections by default</p>
+          </li>
         </ul>
       </div>
 
+      <!-- Reporting Concerns - NEW SECTION -->
+      <div id="report-section" class="mb-20 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md p-8 rounded-2xl border-2 border-yellow-400 border-opacity-30">
+        <div class="inline-flex items-center px-4 py-2 bg-yellow-600 bg-opacity-40 text-yellow-100 rounded-lg mb-4">
+          Reporting Concerns
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-6">How to Report Concerns</h2>
+        
+        <div class="mb-8">
+          <p class="text-blue-100 mb-4">If you encounter any content or behavior that violates our guidelines, especially concerns related to child safety, please report it immediately using one of these methods:</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- In-App Reporting -->
+          <div class="bg-white bg-opacity-5 p-6 rounded-xl">
+            <div class="flex items-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+              <h3 class="text-xl font-bold text-white">In-App Reporting</h3>
+            </div>
+            <ul class="space-y-2 text-blue-100 mb-4">
+              <li>• Tap the three dots (⋮) on any post or message</li>
+              <li>• Select "Report" from the menu</li>
+              <li>• Choose the violation category</li>
+              <li>• For urgent child safety concerns, select "Child Safety"</li>
+            </ul>
+            <p class="text-yellow-200 text-sm">Reports are reviewed 24/7, with child safety reports prioritized</p>
+          </div>
+          
+          <!-- Direct Email -->
+          <div class="bg-white bg-opacity-5 p-6 rounded-xl">
+            <div class="flex items-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <h3 class="text-xl font-bold text-white">Direct Email</h3>
+            </div>
+            <p class="text-blue-100 mb-2">Contact our Safety Team directly:</p>
+            <a href="mailto:nextingames111@gmail.com" class="text-blue-300 font-medium hover:text-white transition-colors duration-200">nextingames111@gmail.com</a>
+            <p class="text-yellow-200 text-sm mt-4">For urgent child safety concerns, include "URGENT" in the subject line</p>
+          </div>
+        </div>
+        
+        <!-- Emergency Contact Information -->
+        <div class="mt-8 p-6 bg-red-900 bg-opacity-20 rounded-xl">
+          <div class="flex items-start mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-400 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-bold text-white">Immediate Concerns</h3>
+              <p class="text-blue-100 mt-1">If you believe a child is in immediate danger, please:</p>
+            </div>
+          </div>
+          <ul class="space-y-3 text-blue-100 ml-9">
+            <li>1. Contact local law enforcement immediately</li>
+            <li>2. Report to the National Center for Missing & Exploited Children:
+              <a href="https://report.cybertip.org/" target="_blank" class="text-blue-300 hover:text-white transition-colors duration-200">CyberTipline</a> or call 1-800-843-5678
+            </li>
+            <li>3. Then notify our Safety Team at <a href="tel:+18005551234" class="text-blue-300 hover:text-white transition-colors duration-200">1-800-555-1234</a> (24/7 emergency line)</li>
+          </ul>
+        </div>
+        
+        <!-- What Happens After Reporting -->
+        <div class="mt-8 bg-white bg-opacity-5 p-6 rounded-xl">
+          <h3 class="text-xl font-bold text-white mb-4">What Happens After You Report</h3>
+          <ol class="space-y-3 text-blue-100 list-decimal list-inside">
+            <li>Our Trust & Safety team reviews the report (urgent child safety reports are prioritized)</li>
+            <li>Appropriate action is taken according to our policies and applicable laws</li>
+            <li>Law enforcement is notified when required by law or when a child is at risk</li>
+            <li>You may be contacted for additional information if needed</li>
+            <li>While we cannot share details of investigations, we will inform you when your report has been processed</li>
+          </ol>
+        </div>
+      </div>
+
       <!-- Our Commitment -->
-      <div class="mt-12 pt-12 border-t border-white border-opacity-10 text-center">
+      <div id="commitment" class="mt-12 pt-12 border-t border-white border-opacity-10 text-center">
         <h3 class="text-2xl font-bold text-white mb-6">Our Commitment</h3>
         <p class="text-blue-100 mb-6 max-w-3xl mx-auto">
           Violation of these guidelines may result in content removal, account suspension, or permanent ban from the Milaan platform. We reserve the right to update these guidelines as needed to maintain a safe and productive learning environment.
         </p>
+        <p class="text-blue-100 mb-6 max-w-3xl mx-auto">
+          Child safety is our highest priority. Violations of our child safety guidelines will result in immediate action, including account termination and reporting to appropriate authorities.
+        </p>
+        <div class="mt-8 inline-block px-6 py-3 bg-white bg-opacity-10 backdrop-filter backdrop-blur-md rounded-lg">
+          <p class="text-blue-200">Last Updated: March 28, 2025</p>
+        </div>
       </div>
     </div>
   </section>
@@ -250,6 +444,9 @@
         </a>
         <a href="help.html" class="text-white transition-colors duration-200 flex items-center">
           Help & Support
+        </a>
+        <a href="mailto:safety@milaan.com" class="text-yellow-300 hover:text-white transition-colors duration-200 flex items-center">
+          Report Safety Concern
         </a>
       </div>
     </div>
